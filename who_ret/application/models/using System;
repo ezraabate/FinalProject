@@ -1,0 +1,66 @@
+using System; 
+
+//create a name space 
+namespace xyzOrganization;
+{
+
+//create a class within the namespace
+    public class Employee 
+    {  
+
+//declare the instance member variable idNumber
+
+private int idNumber;
+    public int idNumber() {
+        return idNumber;
+    }
+
+//declare the instance member variable firstName
+
+private string firstName;
+    public string firstName() {
+        return firstName;
+    }
+
+//create a parameterized constructors that initializes idNumber and firstName
+
+    public Employee(int valueIdNumber, string valueFirstName) 
+   {
+        IdNumber = valueIdNumber;
+        FirstName = valueFirstName;
+    }
+}
+
+//create appropriate properties for the two instance variables
+public int IdNumber
+{
+get
+{
+return idNumber;
+}
+set
+{
+idNumber = value;
+}
+}
+
+public string FirstName
+{
+get
+{
+return firstName;
+}
+set
+{
+firstName = value;
+}
+}
+
+//Displaying the message 
+public void DisplayMessage()
+{
+Console.WriteLine(“Employee Id: {0}, ‘IdNumber’);
+Console.WriteLine(“Employee Name: {0}, ‘FirstName’);
+}
+    };
+}
